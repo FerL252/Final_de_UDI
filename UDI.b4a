@@ -1,0 +1,73 @@
+﻿Version=7.01
+NumberOfModules=4
+Module1=Starter
+Module2=Facturacion
+Module3=Stockmates
+Module4=Stockmateriales
+Build1=Default,b4a.example
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~
+IconFile=
+NumberOfFiles=4
+File1=Facturacion.bal
+File2=MenuPrincipal.bal
+File3=StockMateriales.bal
+File4=StockMates.bal
+NumberOfLibraries=1
+Library1=core
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: Gestor
+	#VersionCode: 1
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: false
+	#IncludeTitle: false
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+	Activity.LoadLayout("menuprincipal")
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub boton_1_Click
+	'Evento para ir a la pantalla de facturacion
+	StartActivity(Facturacion)
+	
+End Sub
+
+Sub boton_2_Click
+	'Evento para ir al stock de mater
+	StartActivity(Stockmates)
+End Sub
+
+Sub boton_3_Click
+	'Evento para ir al stock de materiales
+	StartActivity(Stockmateriales)
+End Sub
+
+Sub boton_salir_Click
+	'Evento para salir de la app
+	Activity.Finish
+End Sub

@@ -1,0 +1,13 @@
+Primera version
+
+* Se realizo el diseño principal (menuprincipal.bal)
+* Se han agregado imagenes de botones personalizadas
+* He agregado el diseño "facturacion.bal"
+* He agregado el diseño "stockmates.bal"
+* He agregado el diseño "stockmateriales.bal"
+* A Franco le gustan los trapitos
+* Se agrego la actividad Facturacion
+* Se agrego la actividad StockMates
+* Se agrego la actividad StockMateriales
+* Y a Nelson Mendez
+* Realize las conecciones entre las actividades y los diseños
